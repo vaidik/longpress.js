@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1, maximum-scale=1">
+    <title>Longpress Event for Mobile and Desktop</title>
+</head>
+
+<body>
+    <a id="a" href="#">Longpress Me</a> 
+    <script type="text/javascript">
+    // This is how you override the default duration for triggering longpress.
+    var longpress_config = {
+        duration: 600,
+    };
+    </script>
+    <script src="longpress.js"></script>
+    
+    <script type="text/javascript">
+    var a = document.getElementById('a');
+
+    a.addEventListener('click', function(e) {
+        alert('Naah! This was just a normal click.');
+    });
+
+    a.addEventListener('longpress', function(e) {
+        alert('Yay! Got longpressed!');
+    });
+    </script>
+</body>
+</html>
