@@ -24,4 +24,4 @@ var longpress_config = {
 Example available in [`index.html`][index].
 
 [WD]: http://vaidik.github.io/longpress.js/
-[index]: https://github.com/vaidik/longpress/blob/master/index.html
+[index]: https://github.com/vaidik/longpress.js/blob/master/index.html
